@@ -1,0 +1,58 @@
+/* Fuente global y scroll suave */
+body {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Sección Hero */
+.hero-section {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Marco para la imagen de perfil circular */
+.profile-img-container {
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border: 4px solid var(--bs-primary);
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* Efecto hover suave para tarjetas */
+.card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Indicador de timeline para experiencia */
+.timeline-badge {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--bs-primary);
+  display: inline-block;
+  margin-right: 8px;
+}
+
+/* Ajustes responsivos adicionales */
+@media (max-width: 576px) {
+  .profile-img-container {
+    width: 220px;
+    height: 220px;
+  }
+}
