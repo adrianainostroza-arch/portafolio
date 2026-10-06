@@ -56,3 +56,85 @@ body {
     height: 220px;
   }
 }
+
+/* Matriz FODA Personal */
+.foda-intro {
+  max-width: 760px;
+}
+
+.foda-card {
+  overflow: hidden;
+  border-top: 4px solid transparent !important;
+}
+
+.foda-fortalezas {
+  border-top-color: #198754 !important;
+}
+
+.foda-debilidades {
+  border-top-color: #ffc107 !important;
+}
+
+.foda-oportunidades {
+  border-top-color: #0d6efd !important;
+}
+
+.foda-amenazas {
+  border-top-color: #dc3545 !important;
+}
+
+.foda-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.foda-icon {
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: var(--bs-primary-bg-subtle);
+  color: var(--bs-primary);
+  font-size: 1.25rem;
+}
+
+.foda-subtitle {
+  font-size: 0.78em;
+  font-weight: 500;
+  color: var(--bs-secondary-color);
+}
+
+.foda-list {
+  padding-left: 1.2rem;
+}
+
+.foda-list li {
+  margin-bottom: 0.8rem;
+  color: var(--bs-body-color);
+}
+
+.foda-list li:last-child {
+  margin-bottom: 0;
+}
+
+.foda-conclusion {
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.75rem;
+  background: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+@media (max-width: 576px) {
+  .foda-heading {
+    gap: 0.75rem;
+  }
+
+  .foda-heading h4 {
+    font-size: 1.1rem;
+  }
+}
